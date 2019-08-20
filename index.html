@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Number Guesser</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <main>
+        <h1>Number Guesser</h1>
+
+        <div id="instructions">
+            <h2>How to PLAY</h2>
+            <ul>
+                <li>Choose a first Number</li>
+                <li>Choose a second Number</li>
+                <li>Click Ok</li>
+            </ul>
+            <p>You have 3 chances to guess the number between the range of your selected first and second numbers inclusive.</p>
+            <button id="start">Let's Go</button>
+        </div>
+
+        <div id="game">
+            <div id="output">
+                <p>guesses remaining</p>
+                <input type="number" id="guess-box" disabled>
+                <p>your answer</p>
+                <input type="number" id="answer-box">
+                <p>hidden number</p>
+                <input type="number" id="hidden" disabled>
+                <img src="" alt="">                
+            </div>
+            <div id="input">
+                    <p>Enter first Number</p>
+                    <input type="number" id="first-number" class="input-number" maxlength="2" size="2">
+                    <p>Enter second Number</p>
+                    <input type="number" id="second-number" class=input-number" maxlength="2" size="2">
+                    <div id="number-grid">
+                            <button class="number">1</button>
+                            <button class="number">2</button>
+                            <button class="number">3</button>
+                            <button class="number">4</button>
+                            <button class="number">5</button>
+                            <button class="number">6</button>
+                            <button class="number">7</button>
+                            <button class="number">8</button>
+                            <button class="number">9</button>
+                            <button class="number">0</button>
+                            <button id="reset">reset</button>
+                            <button  id="span-two">OK</button>
+                    </div>
+            </div>
+
+            <div id="result">
+                <input type="number" disabled>
+            </div>
+        </div>
+    </main>
+
+    <script src="./js/app.js"></script>
+    
+</body>
+</html>
